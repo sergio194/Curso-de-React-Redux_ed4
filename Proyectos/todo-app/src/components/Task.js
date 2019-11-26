@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import '../styles/Task.css'
 
 const Task = ({
@@ -27,11 +27,19 @@ return (
       {children}
     </label>
     <button
-      onClick={(event) => removeTask(event, children, className)}
+      onClick={(event) => removeTask(event)}
       className="td-remove_task">
         x
     </button>
   </div>
 )};
 
+// podemos validar el tipo de las props con esta librería
+Task.propTypes = {
+  removeTask: PropTypes.func,
+  children: PropTypes.string,
+  onInpChange: PropTypes.func,
+  checked: PropTypes.bool,
+  className: PropTypes.string
+}
 export { Task };
