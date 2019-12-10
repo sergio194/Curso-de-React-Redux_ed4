@@ -112,16 +112,18 @@ const List = ({
   )
 };
 
-const mapStateToProps = function(state){
-  return {
-    lists: state.lists
-  }
-}
+// const mapStateToProps = function(state){
+//   return {
+//     tasks: state.tasks
+//   }
+// }
 
-const mapDispatchToProps = function(dispatch){
-  return {
-    createTask: () => dispatch(createTask())
-  }
-}
+// const mapDispatchToProps = function(dispatch){
+//   return {
+//     createTask: () => dispatch(createTask())
+//   }
+// }
 
-export default connect(mapStateToProps,mapDispatchToProps)(List);
+// export default connect(mapStateToProps,mapDispatchToProps)(List);
+
+export default List
