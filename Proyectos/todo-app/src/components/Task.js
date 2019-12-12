@@ -10,8 +10,15 @@ const Task = ({
   checked = false,
 }) => {
 
+  // const isTaskCompleted = checked ? 'td-task-wrapper--check' : 'td-task-wrapper--noCheck'
+  const isTaskCompleted = checked ? {
+    backgroundColor: "lightgreen"
+  } : {
+    backgroundColor: "tomato"
+  }
+
 return (
-  <div className="td-task-wrapper">
+  <div className="td-task-wrapper" style={isTaskCompleted}>
     <input
       className="td-task-input"
       type="checkbox"

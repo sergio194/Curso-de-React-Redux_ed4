@@ -5,4 +5,4 @@ const Home = () => {
     return <Accordion></Accordion>
 }
 
-export { Home }; 
+export default Home ; 

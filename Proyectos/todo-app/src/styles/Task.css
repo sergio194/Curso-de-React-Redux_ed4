@@ -9,6 +9,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.td-task-wrapper--check {
+  background-color: lightgreen;
+}
+.td-task-wrapper--nocheck {
+  background-color: tomato;
+}
 
 .td-task-input[type="checkbox"] {
   cursor: pointer;

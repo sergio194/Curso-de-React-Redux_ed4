@@ -13,4 +13,4 @@ const Comments = (props) => {
     )
 }
 
-export { Comments }; 
+export default Comments; 
